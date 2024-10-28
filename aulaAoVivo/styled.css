@@ -1,0 +1,57 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(24, 28, 31);
+    font-size: 28px;
+}
+
+
+h1 {
+    color: yellow;
+    font-size: 4rem;
+}
+
+p {
+    color: rgb(219, 215, 177);
+}
+
+menu > .btn {
+    padding: 10px 20px;
+    font-size: 1.5rem;
+    background-color: rgb(40, 47, 51);
+    outline: none;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+menu > .btn.active{
+    background-color: yellow;
+    color: black;   
+}
+
+#tab-content {
+    background-color: rgb(45, 57, 66);
+    width: 42rem;
+    padding: 64px;
+}
+
+li {
+    color: white;
+}
+
+.um{
+    display: block;
+}
+.dois{
+    display: none;
+}
+.tres{
+    display: none;
+}

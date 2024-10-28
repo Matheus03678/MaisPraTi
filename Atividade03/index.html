@@ -1,0 +1,64 @@
+<!-- Estrutura da Página:
+- Crie uma página web com um header, section, aside e footer.
+- O header deve conter o título do site e um menu de navegação simples com 3 links fictícios (ex.: Home, Sobre, Contato).
+- O section será a área principal do conteúdo, com um parágrafo explicando sobre o site.
+- O aside deve conter uma lista de links externos relacionados ao tema do site.
+- O footer deve incluir informações de direitos autorais.
+
+Estilização com CSS:
+- Aplique cores ao fundo do header, section, aside e footer.
+- Centralize o texto no header e no footer.
+- Utilize uma fonte personalizada (ex.: Google Fonts) para o texto do section.
+- Crie um layout com duas colunas: o section à esquerda e o aside à direita, ocupando 70% e 30% da largura da tela, respectivamente.
+- Adicione um efeito hover para os links do menu de navegação e os do aside (ex.: mudar de cor quando passar o mouse).
+
+Requisitos Mínimos:
+- Utilizar ao menos uma imagem no section com o atributo alt preenchido corretamente.
+- Os links no menu de navegação e no aside devem ser clicáveis (mesmo que levem a páginas fictícias). -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styled.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+    <title>Simpol page web</title>
+</head>
+<body>
+    <header class="flex">
+        <h2 class="title">
+            Titulo
+        </h2>
+        <ul class="wraper_links flex">
+            <li><a href="">home</a></li>
+            <li><a href="">sobre</a></li>
+            <li><a href="">contato</a></li>
+        </ul>
+    </header>
+    <main>
+        <section class="section_main">
+            <img src="https://picsum.photos/seed/picsum/1500/700" alt="imagem">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In ullam tempora, corrupti ratione numquam quos eaque, repellat atque enim incidunt labore amet laborum, blanditiis possimus esse officia quas illo autem!
+            Dignissimos perspiciatis quis cupiditate. Atque, veritatis. Placeat labore quaerat maxime aut magni deserunt porro! Saepe sunt totam sint vero, hic explicabo recusandae inventore sapiente temporibus est praesentium, excepturi eius non!</p>
+        </section>
+        <aside class="aside_main">
+            <ul class="wraper_links">
+                <li><a href="">primeiro link</a></li>
+                <li><a href="">segundo link</a></li>
+                <li><a href="">tercerio link</a></li>
+            </ul>
+        </aside>
+    </main>
+    <footer>
+        <p>&copy; 2024 Simpol. Todos os direitos reservados.</p>
+        <p>Este site é protegido por direitos autorais e não pode ser reproduzido sem autorização.</p>
+        <p><a href="termos.html">Termos de Uso</a> | <a href="privacidade.html">Política de Privacidade</a></p>
+    </footer>
+</body>
+</html>

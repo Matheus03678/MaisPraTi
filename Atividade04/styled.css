@@ -1,0 +1,41 @@
+body{
+    font-size: 22px;
+}
+
+.wrap-testim-cards .card{
+    width: calc(100% - 50px);
+    /* height: calc(100% - 50px); */
+    margin-bottom: 20px;
+}
+
+.card-img-top {
+    height: 300px;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+
+@media (max-width = 750px){
+    .card-img-top{
+        width: 50%;
+    }
+}
+
+/*  CARROSSEL */
+.carousel-item{
+    width: 100vw;
+    height: 100vh;
+}
+.carousel-item > img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+.carousel {
+height: 100vh;
+}
+
+.carousel-inner {
+height: 100%;
+}
+  

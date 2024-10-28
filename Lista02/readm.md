@@ -1,4 +1,3 @@
-# +praTi
 Para rodar o programa bastar ter o node na maquina:
 1 - https://nodejs.org/en
 

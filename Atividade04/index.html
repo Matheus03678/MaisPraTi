@@ -1,0 +1,206 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="./styled.css">
+  </head>
+  <body>
+    <header class="bg-dark py-3">
+      <div class="container d-flex justify-content-between align-items-center">
+        <a href="#" class="navbar-brand text-white">
+          <img src="./assents/logo.svg" alt="Logo da Empresa" class="img-fluid" style="width: 90px; border-radius: 50%;">
+        </a>
+        <nav class="navbar navbar-expand-lg navbar-dark">
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item"><a href="#about" class="nav-link">Sobre</a></li>
+              <li class="nav-item"><a href="#services" class="nav-link">Serviços</a></li>
+              <li class="nav-item"><a href="#testimonials" class="nav-link">Testemunhos</a></li>
+              <li class="nav-item"><a href="#contact" class="nav-link">Contato</a></li>
+            </ul>
+          </div>
+        </nav>
+        <a href="#contact" class="btn btn-primary">Entre em Contato</a>
+      </div>
+    </header>
+    
+    <!-- BANNER -->
+    <section class="banner">
+      <div id="mainCarousel" class="carousel slide" data-ride="carousel" data-interval="8000">
+        <!-- Indicadores -->
+        <ol class="carousel-indicators">
+          <li data-target="#mainCarousel" data-slide-to="0" class="active"></li>
+          <li data-target="#mainCarousel" data-slide-to="1"></li>
+          <li data-target="#mainCarousel" data-slide-to="2"></li>
+        </ol>
+        
+        <!-- Slides do carrossel -->
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="./assents/antique-car-8940770_1280.jpg" class="d-block w-100" alt="Slide 1" loading="eager">
+          </div>
+          <div class="carousel-item">
+            <img src="./assents/car-1283947_1280.jpg" class="d-block w-100" alt="Slide 2" loading="eager">
+          </div>
+          <div class="carousel-item">
+            <img src="./assents/vw-3601675_1280.jpg" class="d-block w-100" alt="Slide 3" loading="eager">
+          </div>
+          <div class="carousel-item">
+            <img src="./assents/antique-car-1408693_1280.jpg" class="d-block w-100" alt="Slide 4" loading="eager">
+          </div>
+        </div>
+        
+        <!-- Botões de navegação -->
+        <a class="carousel-control-prev" href="#mainCarousel" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Anterior</span>
+        </a>
+        <a class="carousel-control-next" href="#mainCarousel" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Próximo</span>
+        </a>
+      </div>
+    </section>
+    
+    <!-- <section>
+      <div id="carouselExampleDark" class="carousel carousel-dark slide">
+        <div class="carousel-indicators">
+          <button class="bg-light" type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button class="bg-light" type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button class="bg-light" type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active" data-bs-interval="10000" data-ride="carousel">
+            <img src="./assents/antique-car-8940770_1280.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>First slide label</h5>
+              <p>Some representative placeholder content for the first slide.</p>
+            </div>
+          </div>
+          <div class="carousel-item" data-bs-interval="2000">
+            <img src="./assents/car-1283947_1280.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Second slide label</h5>
+              <p>Some representative placeholder content for the second slide.</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="./assents/vw-3601675_1280.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Third slide label</h5>
+              <p>Some representative placeholder content for the third slide.</p>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </section> -->
+
+    <!-- FIM DO BANNER -->
+
+    <!-- SOBRE -->
+    <section id="about" class="py-5 bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col text-center">
+                    <h2 class="mb-4">Sobre Nós</h2>
+                    <p>Na Random Incorporated, somos apaixonados por carros e comprometidos em oferecer os melhores serviços de manutenção e venda de veículos, com um foco especial em carros clássicos e antigos. Com anos de experiência no setor automotivo, nossa equipe de especialistas combina conhecimento técnico avançado com um profundo respeito pela história e autenticidade dos veículos.</p>
+                  </div>
+              </div>
+          </div>
+      </section>
+      <!-- FIM DO SOBRE -->
+      
+      <!-- SERVICES -->
+      <section id="services" class="py-5">
+          <div class="container">
+              <h2 class="text-center mb-4">Nossos Serviços</h2>
+              <div class="row" id="services-cards">
+                  <!-- Os cards de serviço serão carregados dinamicamente aqui -->
+              </div>
+          </div>
+      </section>
+      
+      <!-- FIM DO SERVICES -->
+
+      <!-- TESTEMUNHO -->
+      <section id="testimonials" class="py-5 bg-light">
+          <div class="container">
+            <h2 class="text-center mb-4">O que nossos clientes dizem</h2>
+            <div class="row" id="testimonials-cards">
+              <!-- Adicione mais cards para outros testemunhos -->
+            </div>
+          </div>
+        </section>
+      <!-- FIM DO TESTEMUNHO -->
+      
+      <!-- CONTATO -->
+      <section id="contact" class="py-5">
+        <div class="container">
+          <h2 class="text-center mb-4">Entre em Contato</h2>
+          <div class="row justify-content-center">
+            <div class="col-md-6">
+              <form id="contact-form" class="needs-validation" novalidate>
+                <div class="form-group">
+                  <label for="name">Nome</label>
+                  <input type="text" class="form-control" id="name" name="name" required>
+                  <div class="invalid-feedback">Por favor, insira seu nome.</div>
+                </div>
+                <div class="form-group">
+                  <label for="email">Email</label>
+                  <input type="email" class="form-control" id="email" name="email" required>
+                  <div class="invalid-feedback">Por favor, insira um email válido.</div>
+                </div>
+                <div class="form-group">
+                  <label for="phone">Telefone</label>
+                  <input type="tel" class="form-control" id="phone" name="phone" required>
+                  <div class="invalid-feedback">Por favor, insira seu telefone.</div>
+                </div>
+                <div class="form-group">
+                  <label for="message">Mensagem</label>
+                  <textarea class="form-control" id="message" name="message" rows="5" required></textarea>
+                  <div class="invalid-feedback">Por favor, insira sua mensagem.</div>
+                </div>
+                <button type="submit" class="btn btn-primary btn-block">Enviar</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- FIM DO CONTATO -->
+
+      <!-- FOOTER -->
+      <footer class="bg-dark text-white py-4">
+        <div class="container text-center">
+          <div class="mb-3">
+            <a href="#" class="text-white mr-3"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" class="text-white mr-3"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="text-white mr-3"><i class="fab fa-twitter"></i></a>
+          </div>
+          <p><a href="#" class="text-white">Termos de Uso</a> | <a href="#" class="text-white">Política de Privacidade</a></p>
+        </div>
+      </footer>
+      
+        <!-- FIM DOFOOTER -->
+    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script> -->
+    <!-- jQuery e Bootstrap JS -->
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <script src="./script.js"></script>
+  </body>
+</html>

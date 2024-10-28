@@ -1,0 +1,41 @@
+{
+    "servicos": [
+      {
+        "name": "Restauração Completa",
+        "description": "Serviço completo de restauração para carros clássicos, incluindo reparos de carroceria, pintura original, restauração de interior e mecânica."
+      },
+      {
+        "name": "Reparação de Carroceria",
+        "description": "Conserto de amassados, ferrugem e danos na estrutura do veículo, preservando os detalhes e características originais."
+      },
+      {
+        "name": "Pintura Automotiva",
+        "description": "Aplicação de pintura automotiva com as cores originais do veículo, utilizando técnicas clássicas e tintas de alta qualidade."
+      },
+      {
+        "name": "Restauração de Motor",
+        "description": "Revisão completa e restauração de motores de carros antigos, garantindo o desempenho original e preservação de componentes históricos."
+      },
+      {
+        "name": "Revisão de Suspensão e Freios",
+        "description": "Serviço de revisão e restauração do sistema de suspensão e freios para garantir a segurança e o conforto ao dirigir veículos clássicos."
+      },
+      {
+        "name": "Reparo e Restauração Elétrica",
+        "description": "Diagnóstico e reparo do sistema elétrico, incluindo substituição de fios antigos, conserto de painéis e restauração de sistemas de iluminação."
+      },
+      {
+        "name": "Estofamento e Interior",
+        "description": "Restauração ou substituição de estofados, carpetes e painéis internos, mantendo o estilo original ou personalizando conforme o desejo do cliente."
+      },
+      {
+        "name": "Calibragem e Alinhamento de Rodas Clássicas",
+        "description": "Serviço especializado em calibragem e alinhamento de rodas e pneus clássicos para preservar a estética e a funcionalidade original do veículo."
+      },
+      {
+        "name": "Instalação de Peças de Época",
+        "description": "Procura, instalação e substituição de peças originais de época para garantir que o carro mantenha sua autenticidade e valor histórico."
+      }
+    ]
+  }
+  
