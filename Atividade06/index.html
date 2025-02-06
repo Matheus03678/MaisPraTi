@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styled.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/454b661755.js" crossorigin="anonymous"></script>
+    <title>Document</title>
+</head>
+<body>
+    <main class="content">
+        <article>
+            <button class="btn" onclick="openModal()">Ver Mais</button>
+            <div class="overlay" id="overlay" onclick="closeModal()"></div>
+            <div class="modal" id="modal">
+                <h2>Detalhes do app</h2>
+                <p>
+                    O que é uma To-Do List?
+                    Uma To-Do List (ou lista de tarefas) é uma ferramenta utilizada para organizar e gerenciar atividades que precisam ser realizadas. Pode ser feita em papel, aplicativos ou sistemas digitais.
+
+                    Para que serve?
+                    Ela serve para planejar, priorizar e acompanhar tarefas, ajudando a manter o foco e a produtividade no dia a dia. Pode ser usada para atividades pessoais, estudos, trabalho e projetos diversos.
+
+                    Vantagens de usar uma To-Do List:
+                    <br>
+                    ✅ Organização: Mantém as tarefas organizadas e visíveis.
+                    <br>
+                    ✅ Produtividade: Ajuda a evitar esquecimentos e melhora a eficiência.
+                    <br>
+                    ✅ Prioridades: Permite definir o que é mais importante.
+                    <br>
+                    ✅ Motivação: Marcar tarefas concluídas gera satisfação e incentiva a continuar.
+                    <br>
+                    ✅ Redução de estresse: Ajuda a visualizar o que precisa ser feito, evitando sobrecarga mental.
+                </p>
+                <button class="btn close-btn" onclick="closeModal()">Fechar</button>
+            </div>
+        </article>
+        <!-- CARROSSEL -->
+        <div class="carousel-container">
+            <div class="carousel-slide active">
+                <h2>Novo Jogo: Aventura Épica</h2>
+                <img src="imagem-fornecida.jpg" alt="Novo Jogo">
+                <p>Descubra um novo mundo cheio de desafios e diversão.</p>
+                <a href="https://www.cnnbrasil.com.br" class="carousel-button" target="_blank">Saiba Mais</a>
+            </div>
+            <div class="carousel-slide">
+                <h2>Novo Jogo: Corrida Extrema</h2>
+                <img src="corrida.jpg" alt="Corrida Extrema">
+                <p>Sinta a adrenalina nas pistas mais desafiadoras.</p>
+                <a href="https://www.cnnbrasil.com.br" class="carousel-button" target="_blank">Saiba Mais</a>
+            </div>
+            <div class="carousel-slide">
+                <h2>Novo Serviço: Streaming de Jogos</h2>
+                <img src="streaming.jpg" alt="Streaming de Jogos">
+                <p>Acesse uma biblioteca enorme de jogos direto do seu dispositivo.</p>
+                <a href="https://www.cnnbrasil.com.br" class="carousel-button" target="_blank">Saiba Mais</a>
+            </div>
+            <div class="nav-buttons">
+                <button onclick="prevSlide()"><i class="fa-solid fa-plus"></i> Anterior</button>
+                <button onclick="nextSlide()">Próximo <i class="fa-solid fa-minus"></i></button>
+            </div>
+        </div>
+        <!-- CARROSSEL -->
+        <h1 class="title">todo <span>list</spanc> +</h1>
+        <div class="wrap_input">
+            <input type="text" placeholder="Add New Todo" id="input">
+            <button id="add-btn">
+                <i class="fa-solid fa-plus customs"></i>
+            </button>
+        </div>    
+        <ul class="wrap-list-items">
+        </ul>
+    </main>
+
+    <script src="./script.js"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"></script> -->
+</body>
+</html>

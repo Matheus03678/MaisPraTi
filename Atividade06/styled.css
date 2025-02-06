@@ -1,0 +1,242 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body
+{
+    height: 100vh;
+    display: grid;
+    place-items: center;
+    background-color: beige;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f4f4f4;
+}
+
+/* MODAL DE SAIBA MAIS */
+.modal {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: white;
+    padding: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+    border-radius: 5px;
+    width: 500px;
+    font-size: 1.2rem;
+}
+.modal.active {
+    display: block;
+}
+.overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+}
+.overlay.active {
+    display: block;
+}
+.btn {
+    font-size: 1.2rem;
+    padding: 10px 20px;
+    background: #007BFF;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+.btn:hover {
+    background: #0056b3;
+}
+.close-btn {
+    margin-top: 10px;
+    background: #dc3545;
+}
+.close-btn:hover {
+    background: #c82333;
+}
+/* MODAL DE SAIBA MAIS */
+
+/* CARROSSEL */
+.carousel-container {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100%;
+    background-color: #000;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+.carousel-slide img {
+    max-width: 100%;
+    height: auto;
+}
+.carousel-slide {
+    display: none;
+}
+.carousel-slide.active {
+    display: block;
+}
+.carousel-button {
+    margin-top: 10px;
+    padding: 10px 20px;
+    background: #007BFF;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    text-decoration: none;
+    display: inline-block;
+}
+.carousel-button:hover {
+    background: #0056b3;
+}
+.nav-buttons {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+.nav-buttons button {
+    margin: 0 10px;
+    padding: 10px 15px;
+    background: #28a745;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+.nav-buttons button:hover {
+    background: #218838;
+}
+/* CARROSSEL */
+
+.content
+{
+    width: 350px;
+    /* height: 50vh; */
+    text-align: center;
+}
+
+.title 
+{
+    font-size: 3.5rem;
+    font-family: sans-serif;
+    text-transform: capitalize;
+}
+
+.wrap_input
+{
+    display: flex;
+    justify-content: space-between;
+    gap: 5px;
+    width: 100%;
+    margin: 30px 0;
+}
+
+.wrap_input input
+{
+    background-color: #fffaf2;
+    flex: 1;
+    border: none;
+    outline: none;
+    font-size: 1.2rem;
+    padding: 15px 10px;
+    border-radius: 5px;
+}
+
+input::placeholder,
+.wrap-list-items > div .item
+{
+    color: #666875;
+}
+
+.customs
+{
+    font-size: 1.2rem;
+}
+
+.wrap_input button {
+    padding: 4px 12px;
+    color: black;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-left: 5px;
+    background: linear-gradient(90deg, #80f382, #82e6f3);
+
+}
+
+.wrap-list-items
+{
+    width: 100%;
+}
+
+.wrap-item
+{
+    display: flex;
+    height: 3rem;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    align-items: center;
+    background-color: #fffaf2;
+}
+
+.wrap-item .item
+{
+    flex: 1;
+    border: none;
+    outline: none;
+    list-style: none;
+    text-align: start;
+    padding: 8px 25px;
+    font-size: 1.2rem;
+    text-transform: capitalize;
+    /* word-break: break-all; */
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.wrap-item > div 
+{
+    height: 100%;
+}
+
+.wrap-list-items > .wrap-item > div > button
+{
+    border: none;
+    height: 100%;
+    border-radius: 4px;
+    font-size: 1.2rem;
+    padding: 4px 22px;
+    background-color: #666875;
+    cursor: pointer;
+}
+
+.wrap-item > input[type="checkbox"]{
+    margin-left: 20px;
+    font-size: 2rem;
+    border-radius: 50%;
+} 
+.wrap-item > input[type="checkbox"]:checked ~ .item
+{
+    text-decoration: line-through;
+}
+
+
